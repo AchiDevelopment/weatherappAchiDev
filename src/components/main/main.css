@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+}
+
+.main-container {
+    position: relative;
+    width: 500px;
+    height: 470px;
+    margin: auto;
+    top: 10rem;
+    background: rgb(93, 156, 177);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px -8px 5px white;
+    transition: all 0.3s linear;
+}
+
+.main-container:hover {
+    transform: scaleX(1.03) scaleY(1.03);
+}
+
+.input-container {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.input-container input {
+    width: 350px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 5px 5px gray;
+}
+
+.input-container button {
+    margin-left: 0.5rem;
+    background: rgb(36, 152, 36);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    height: 40px;
+    width: 80px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 5px 5px gray;
+    transition: all 0.3s linear;
+}
+
+.input-container button:hover {
+    transform: scaleX(1.03) scaleY(1.03);
+}
+
+.weather-info-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    height: 5px;
+    margin-top: 1rem;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    width: 440px;
+    color: white;
+    background: linear-gradient(to right, rgb(6, 138, 6), rgb(52, 147, 52));
+    margin-bottom: 1rem;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+.name:hover {
+    background: linear-gradient(to left, rgb(6, 138, 6), rgb(52, 147, 52));
+    box-shadow: 2px 5px 5px green;
+}
+
+.name h2 {
+    margin-left: 1rem;
+}
+
+.country {
+    margin-left: 2rem;
+}
+
+.info {
+    font-size: 18px;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.info p {
+    background: linear-gradient(to right, rgb(6, 6, 82), rgb(10, 10, 215));
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    padding-left: 10px;
+    transition: all 0.3s linear;
+}
+
+.info p:hover {
+    background: linear-gradient(to left, rgb(6, 6, 82), rgb(10, 10, 215));
+    transform: scaleX(1.03) scaleY(1.03);
+}
